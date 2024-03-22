@@ -51,7 +51,7 @@ int Connection(){
 int main() {
     EventLoop* p = new EventLoop();
     InetAddress localAddress(12345);
-    HttpServer* httpServer = new HttpServer(p,localAddress,"LIBO");
+    HttpServer* httpServer = new HttpServer(p,localAddress,"LB");
     thread t1([&](){
         httpServer->setThreadNum(5);
         httpServer->start();
